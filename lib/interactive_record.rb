@@ -12,7 +12,6 @@ class InteractiveRecord
     hash = DB[:conn].execute(sql)
     hash["name"]
 
-    end
   end
 
 end
