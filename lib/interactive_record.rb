@@ -12,6 +12,7 @@ class InteractiveRecord
     hash = DB[:conn].execute(sql)
     hash.each do |key, value|
       binding.pry
+      
     end
 
   end
