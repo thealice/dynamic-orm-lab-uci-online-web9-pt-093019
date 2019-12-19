@@ -14,7 +14,7 @@ class InteractiveRecord
     array_of_hashes.each do |hash|
       column_names << hash["name"]
     end
-
+    column_names
   end
 
 end
