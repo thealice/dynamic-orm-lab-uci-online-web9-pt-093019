@@ -17,4 +17,10 @@ class InteractiveRecord
     column_names
   end
 
+  def initialize(attributes)
+    attributes.each do |key, value|
+      binding.pry
+    end
+  end
+
 end
