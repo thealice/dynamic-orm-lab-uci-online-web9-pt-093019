@@ -11,5 +11,5 @@ class InteractiveRecord
     sql = "PRAGMA table_info(#{self.table_name})"
     DB[:conn].execute(sql)
   end
-  
+
 end
