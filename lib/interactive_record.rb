@@ -9,8 +9,8 @@ class InteractiveRecord
 
   def self.column_names
     sql = "PRAGMA table_info(#{self.table_name})"
-    hash = DB[:conn].execute(sql)
-    hash.each do |key, value|
+    array_of_hashes = DB[:conn].execute(sql)
+    array_of_hashes.each do |hash|
       binding.pry
       
     end
