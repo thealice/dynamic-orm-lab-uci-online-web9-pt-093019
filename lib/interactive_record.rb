@@ -17,7 +17,7 @@ class InteractiveRecord
     column_names
   end
 
-  def initialize(attributes)
+  def initialize(attributes={})
     attributes.each do |key, value|
       binding.pry
     end
